@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h1 {
+    color: white;
+    font-style: italic;
+}
+
+header {
+    background-color: rgb(67, 67, 250);
+    padding: 12px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    margin-right: 10px;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns:40% 60%;
+    align-items: center;
+}
+
+.sobre img {
+    max-width: 100%;
+}
+
+.sobre h2 {
+    font-style: italic;
+    color: rgb(67, 67, 250);
+}
+
+.sobre p {
+    padding-bottom: 8px;
+}
+
+.sobre {
+    margin-bottom: 56px;
+    margin-top: 8px;
+}
+
+.sobre img {
+    margin-right: 8px;
+    margin-top: 8px;
+}
+
+.vazio {
+    color: white;
+    text-decoration: underline rgb(67, 67, 250);
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtos h2, .titulo {
+    color: rgb(67, 67, 250);
+    font-style: italic;
+}
+
+.livro ul {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.livro ul li {
+    list-style: none;
+    margin-top: 12px;
+    margin-bottom: 18px;
+    font-size: 12px;
+}
+
+.livro h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.livro p {
+    max-width: 150px;
+    margin-bottom: 8px;
+}
+
+.livro button {
+    background-color: rgb(67, 67, 250);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.livro button:hover {
+    background-color: #5370c1;
+}
+
+@media screen and (max-width: 640px) {
+
+    header {
+        max-width: 767px;
+        overflow: hidden;
+    }
+
+    .sobre {
+        display: block;
+        align-items: center;
+        max-width: 767px;
+        overflow: hidden;
+        margin-bottom: 12px;
+    }
+
+    .sobre img {
+        max-height: 80%;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        max-width: 90%;
+        overflow: hidden;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+
+    .livro ul {
+        display: block;
+    }
+
+    .livro ul li {
+        font-size: 12px;
+    }
+
+    .livro p {
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .livro h3 {
+        font-size: 22px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .produtos {
+        text-align: center;
+        align-items: center;
+    }
+
+    .livro button {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    header {
+        max-width: 767px;
+        overflow: hidden;
+    }
+
+    .sobre {
+        display: block;
+        align-items: center;
+        max-width: 767px;
+        overflow: hidden;
+        margin-bottom: 12px;
+    }
+
+    .imagem {
+        text-align: center;
+    }
+
+    .sobre img {
+        display: block;
+        height: 500px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        max-width: 90%;
+        overflow: hidden;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+
+    .livro ul {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 1%;
+        row-gap: 5%;
+        margin-bottom: 15px;
+    }
+
+    .livro ul li {
+        font-size: 12px;
+    }
+
+    .livro img {
+        width: 200px;
+    }
+
+    .livro p {
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .livro h3 {
+        font-size: 28px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .produtos {
+        text-align: center;
+        align-items: center;
+    }
+
+    .livro button {
+        display: block;
+        margin: 0 auto;
+    }
+}
